@@ -1,0 +1,8 @@
+{
+    "project_name": "Project-Name",
+    "module_name": "{{ cookiecutter.project_name.lower().replace('-', '_') }}",
+    "author": "First Name Last Name",
+    "author_email": "first.last@mail.com",
+    "home_page": "https://github.com/username/{{ cookiecutter.project_name }}",
+    "requires_python": "3.7"
+}

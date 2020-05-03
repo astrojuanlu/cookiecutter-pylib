@@ -1,0 +1,25 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+dist-name = "{{ cookiecutter.project_name }}"
+module = "{{ cookiecutter.module_name }}"
+author = "{{ cookiecutter.author }}"
+author-email = "{{ cookiecutter.author_email }}"
+home-page = "{{ cookiecutter.home_page }}"
+requires-python = ">={{ cookiecutter.requires_python }}"
+requires = []
+
+[tool.flit.metadata.requires-extra]
+dev = [
+    "hypothesis",
+    "pytest",
+    "pytest-cov",
+    "pytest-mypy",
+]
+doc = [
+    "sphinx",
+    "sphinx-hoverxref",
+    "sphinx_rtd_theme",
+]
