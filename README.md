@@ -6,26 +6,42 @@ _As simple as possible. No magic._
 
 ## Features
 
-* tox for managing test environments
-* pytest for tests
-* Sphinx for documentation
-* black, flake8 and isort for style checks
-* Mypy for type checks
-
-### Missing/Planned
-
-* Automatic selection of Python versions in tox configuration
-* License selection
-* Versioning (bumpversion? versioneer? setuptools-scm ruled out)
-* CI (Azure Pipelines? GitHub Actions?)
+- [flit] for simple packaging.
+- [pytest] for testing.
+- [tox] for automation of test runners and other stuff.
+- [Sphinx] for documentation
+- [GitHub Actions] for continuous integration and publishing to PyPI.
+- [Read the Docs] for continuous documentation.
+- [mypy] for type checks.
+- [black] for automatic Python code formatting.
+- [flake8] and [isort] for style checks.
 
 ## Usage
+
+Install `cookiecutter`:
+
+```
+pip install cookiecutter
+```
+
+Generate a Python package:
 
 ```
 cookiecutter gh:astrojuanlu/cookiecutter-pylib
 ```
 
-## Alternatives
+## License
 
-* https://github.com/ionelmc/cookiecutter-pylibrary, for a more complex setup
-* https://github.com/audreyr/cookiecutter-pypackage, more popular but less opinionated
+[MIT License](LICENSE)
+
+[cookiecutter]: https://github.com/audreyr/cookiecutter/
+[mypy]: http://mypy.readthedocs.io/
+[flit]: https://flit.readthedocs.io/
+[pytest]: https://docs.pytest.org/
+[Sphinx]: http://www.sphinx-doc.org/
+[tox]: https://tox.readthedocs.io/
+[black]: https://black.readthedocs.io/
+[flake8]: https://flake8.pycqa.org/
+[isort]: https://pycqa.github.io/isort/
+[GitHub Actions]: https://github.com/features/actions
+[Read the Docs]: https://readthedocs.org

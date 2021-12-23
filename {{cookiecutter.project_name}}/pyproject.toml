@@ -1,25 +1,52 @@
 [build-system]
-requires = ["flit_core >=2,<4"]
+requires = ["flit_core >=3.4,<4"]
 build-backend = "flit_core.buildapi"
 
-[tool.flit.metadata]
-dist-name = "{{ cookiecutter.project_name }}"
-module = "{{ cookiecutter.module_name }}"
-author = "{{ cookiecutter.author }}"
-author-email = "{{ cookiecutter.author_email }}"
-home-page = "{{ cookiecutter.home_page }}"
-requires-python = ">={{ cookiecutter.requires_python }}"
-requires = []
+[project]
+name = "{{ cookiecutter.project_name }}"
+readme = "README.md"
+authors = [
+    {name = "{{ cookiecutter.author_name }}", email = "{{ cookiecutter.author_email }}"}
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+dynamic = ["version", "description"]
 
-[tool.flit.metadata.requires-extra]
-dev = [
+[tool.flit.module]
+name = "{{ cookiecutter.package_name }}"
+
+[project.urls]
+source = "https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.project_name }}"
+tracker = "https://github.com/{{ cookiecutter.github_org }}/{{ cookiecutter.project_name }}/issues"
+documentation = "https://{{ cookiecutter.project_name }}.readthedocs.io"
+
+[project.optional-dependencies]
+test = [
     "hypothesis",
     "pytest",
     "pytest-cov",
     "pytest-mypy",
 ]
 doc = [
-    "sphinx",
-    "sphinx-hoverxref",
-    "sphinx_rtd_theme",
+    "furo",
+    "myst-parser",
+    "sphinx~=4.3.0",
+]
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
 ]
