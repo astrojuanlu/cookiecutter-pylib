@@ -27,7 +27,6 @@ def test_project_tree(cookies):
         "docs",
         "docs/source",
         "tests",
-        "tests/cases",
     ]
 
     for path in files:

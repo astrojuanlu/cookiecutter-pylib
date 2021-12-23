@@ -1,1 +1,1 @@
-import {{cookiecutter.module_name}}
+import {{cookiecutter.package_name}}
