@@ -1,4 +1,4 @@
+mypy
 pytest
 pytest-cookies
 pytest-cov
-pytest-mypy
