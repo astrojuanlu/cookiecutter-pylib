@@ -32,10 +32,10 @@ documentation = "https://{{ cookiecutter.project_name }}.readthedocs.io"
 
 [project.optional-dependencies]
 test = [
+    "mypy",
     "hypothesis",
     "pytest",
     "pytest-cov",
-    "pytest-mypy",
 ]
 doc = [
     "furo",
