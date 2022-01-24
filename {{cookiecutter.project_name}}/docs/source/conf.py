@@ -16,10 +16,16 @@ release = ".".join(version.split(".")[:2])
 
 extensions = [
     "myst_parser",
+    "sphinx_copybutton",
 ]
 
 templates_path = ["_templates"]
 
+exclude_patterns = [
+    "Thumbs.db",
+    ".DS_Store",
+    ".ipynb_checkpoints",
+]
 
 # -- Options for HTML output
 
