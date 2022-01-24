@@ -14,7 +14,7 @@ _As simple as possible. No magic._
 - [Read the Docs] for continuous documentation.
 - [mypy] for type checks.
 - [black] for automatic Python code formatting.
-- [flake8] and [isort] for style checks.
+- [flake8], [isort] and [pydocstyle] for style checks.
 
 ## Usage
 
@@ -43,5 +43,6 @@ cookiecutter gh:astrojuanlu/cookiecutter-pylib
 [black]: https://black.readthedocs.io/
 [flake8]: https://flake8.pycqa.org/
 [isort]: https://pycqa.github.io/isort/
+[pydocstyle]: http://www.pydocstyle.org/
 [GitHub Actions]: https://github.com/features/actions
 [Read the Docs]: https://readthedocs.org

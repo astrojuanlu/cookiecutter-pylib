@@ -15,6 +15,7 @@ make sure that you **read our code of conduct** (`CODE_OF_CONDUCT.md`).
 4. Start a new branch off master: `git switch -c new-branch master`
 5. Make your code changes
 6. Check that your code follows the style guidelines of the project: `tox -e reformat && tox -e check`
-7. Run the tests: `tox -e py39`
+7. (optional) Build the documentation: `tox -e docs`
+8. (optional) Run the tests: `tox -e py39`
    (change the version number according to the Python you are using)
-8. Commit, push, and open a pull request!
+9. Commit, push, and open a pull request!
