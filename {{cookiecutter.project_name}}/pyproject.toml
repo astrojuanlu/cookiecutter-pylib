@@ -5,6 +5,7 @@ build-backend = "flit_core.buildapi"
 [project]
 name = "{{ cookiecutter.project_name }}"
 readme = "README.md"
+license = {file = "LICENSE"}
 authors = [
     {name = "{{ cookiecutter.author_name }}", email = "{{ cookiecutter.author_email }}"}
 ]
