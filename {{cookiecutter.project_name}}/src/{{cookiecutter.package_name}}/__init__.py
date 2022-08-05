@@ -1,8 +1,4 @@
-"""
-{{ cookiecutter.project_name }}
-
-{{ cookiecutter.short_description }}
-"""
+"""{{ cookiecutter.short_description }}."""
 
 from __future__ import annotations
 
