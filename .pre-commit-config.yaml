@@ -21,8 +21,3 @@ repos:
   rev: 5.0.4
   hooks:
   - id: flake8
-
-- repo: https://github.com/PyCQA/pydocstyle
-  rev: 6.1.1
-  hooks:
-  - id: pydocstyle
