@@ -15,6 +15,7 @@ _As simple as possible. No magic._
 - [mypy] for type checks.
 - [black] for automatic Python code formatting.
 - [flake8], [isort] and [pydocstyle] for style checks.
+- [pre-commit] for optional automation of style checks.
 
 ## Usage
 
@@ -44,5 +45,6 @@ cookiecutter gh:astrojuanlu/cookiecutter-pylib
 [flake8]: https://flake8.pycqa.org/
 [isort]: https://pycqa.github.io/isort/
 [pydocstyle]: http://www.pydocstyle.org/
+[pre-commit]: https://github.com/pre-commit/pre-commit
 [GitHub Actions]: https://github.com/features/actions
 [Read the Docs]: https://readthedocs.org
