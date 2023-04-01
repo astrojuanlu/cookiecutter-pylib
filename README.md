@@ -1,5 +1,9 @@
 # cookiecutter-pylib
 
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
+_This project is archived, use https://github.com/astrojuanlu/copier-pylib instead_
+
 [Cookiecutter](https://github.com/audreyr/cookiecutter) template for pure Python libraries.
 
 _As simple as possible. No magic._
